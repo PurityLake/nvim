@@ -79,5 +79,13 @@ return {
 			on_attach = on_attach,
 			settings = {},
 		})
+
+		lspconfig["clangd"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			settings = {
+				filetypes = { "c", "cpp", "objc", "objcpp" },
+			},
+		})
 	end,
 }

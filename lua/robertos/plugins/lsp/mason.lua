@@ -18,6 +18,7 @@ return {
 				"rust_analyzer",
 				"tsserver",
 				"clojure_lsp",
+				"clangd",
 			},
 			automatic_installation = true,
 		})
@@ -28,6 +29,7 @@ return {
 				"pylint",
 				"isort",
 				"prettier",
+				"clang-format",
 			},
 		})
 	end,

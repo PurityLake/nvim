@@ -16,7 +16,7 @@ return {
 				"pylint",
 				"eslint",
 				"tsserver",
-				"clojure_lsp",
+				"clang-format",
 			},
 		})
 
@@ -31,13 +31,14 @@ return {
 				"Cargo.toml",
 				"Makefile",
 				".git",
-				"CMakelists.txt",
+				"CMakeLists.txt",
 				"package.json",
 				"project.clj"
 			),
 			sources = {
 				formatting.stylua,
 				formatting.black,
+				formatting.clang_format,
 			},
 			on_attach = function(current_client, bufnr)
 				if current_client.supports_method("textDocument/formatting") then
