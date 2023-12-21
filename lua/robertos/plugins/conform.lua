@@ -8,7 +8,9 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				javascript = { "prettier" },
+				c = { "clang-format" },
 			},
+
 			format_on_save = {
 				lsp_fallback = true,
 				async = false,
