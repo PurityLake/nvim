@@ -56,12 +56,6 @@ return {
 
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
-		lspconfig["rust_analyzer"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-			settings = {},
-		})
-
 		lspconfig["eslint"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,

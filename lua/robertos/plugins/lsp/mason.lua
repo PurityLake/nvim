@@ -30,6 +30,7 @@ return {
 				"isort",
 				"prettier",
 				"clang-format",
+				"ast-grep",
 			},
 		})
 	end,
