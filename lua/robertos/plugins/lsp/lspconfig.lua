@@ -3,11 +3,13 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
+		"folke/neodev.nvim",
 		{ "antosha417/nvim-lsp-file-operations", config = true },
 	},
 	config = function()
 		local lspconfig = require("lspconfig")
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
+		local neodev = require("neodev")
 
 		local keymap = vim.keymap
 		local opts = { noremap = true, silent = true }
@@ -55,6 +57,20 @@ return {
 		end
 
 		local capabilities = cmp_nvim_lsp.default_capabilities()
+
+		neodev.setup({})
+
+		lspconfig["lua_ls"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			settings = {
+				Lua = {
+					completion = {
+						callSnippet = "Replace",
+					},
+				},
+			},
+		})
 
 		lspconfig["eslint"].setup({
 			capabilities = capabilities,
