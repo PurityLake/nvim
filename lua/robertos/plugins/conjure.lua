@@ -19,7 +19,7 @@ return {
 			end,
 		},
 	},
-	config = function(_, opts)
+	config = function(_, _)
 		require("conjure.main").main()
 		require("conjure.mapping")["on-filetype"]()
 	end,
