@@ -22,7 +22,6 @@ return {
 
 		neogit.close = function(...)
 			old_close(...)
-			vim.keymap.del("n", "<leader>gq")
 		end
 
 		vim.keymap.set("n", "<leader>gg", function()
