@@ -3,7 +3,7 @@ return {
 	config = function()
 		require("nvim-treesitter.configs").setup({
 			modules = {},
-			ensure_installed = { "lua", "rust", "toml", "javascript", "clojure" },
+			ensure_installed = { "lua", "rust", "toml", "javascript", "clojure", "python" },
 			auto_install = true,
 			sync_install = false,
 			ignore_install = {},
