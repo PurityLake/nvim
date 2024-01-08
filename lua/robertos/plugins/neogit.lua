@@ -16,10 +16,10 @@ return {
 		vim.keymap.set("n", "<leader>gq", function()
 			require("neogit").close()
 		end, { desc = "Close Neogit" })
-		local group = vim.api.nvim_create_augroup("MyNeogitEvents", { clear = true })
+
 		vim.api.nvim_create_autocmd("User", {
 			pattern = "NeogitPushComplete",
-			group = group,
+			group = nil,
 			callback = require("neogit").close,
 		})
 	end,
