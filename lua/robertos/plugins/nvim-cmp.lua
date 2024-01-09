@@ -26,11 +26,11 @@ return {
 				end,
 			},
 			sources = cmp.config.sources({
-				{ name = "nvim_lsp", keyword_length = 3 },
+				{ name = "nvim_lsp" },
 				{ name = "nvim_lsp_signature_help" },
-				{ name = "nvim_lua", keyword_length = 3 },
-				{ name = "buffer", keyword_length = 2 },
-				{ name = "vsnip", keyword_length = 2 },
+				{ name = "nvim_lua" },
+				{ name = "buffer" },
+				{ name = "vsnip" },
 				{ name = "path" },
 				{ name = "calc" },
 			}),
@@ -41,11 +41,14 @@ return {
 			mapping = cmp.mapping.preset.insert({
 				["<C-Space>"] = cmp.mapping.complete(),
 				["<C-j>"] = cmp.mapping.select_next_item(),
+				["<M-j>"] = cmp.mapping.select_next_item(),
 				["<C-k>"] = cmp.mapping.select_prev_item(),
+				["<M-k>"] = cmp.mapping.select_prev_item(),
 				["<C-e>"] = cmp.mapping.abort(),
 				["<CR>"] = cmp.mapping.confirm({ select = true }),
 			}),
 			formatting = {
+				expandable_indicator = true,
 				fields = { "menu", "abbr", "kind" },
 				format = function(entry, item)
 					local menu_icon = {

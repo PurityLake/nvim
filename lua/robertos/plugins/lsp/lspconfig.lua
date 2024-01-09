@@ -73,7 +73,7 @@ return {
 			},
 		})
 
-		lspconfig["pyright"].setup({
+		lspconfig["pylsp"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 			settings = {},
