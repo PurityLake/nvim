@@ -50,7 +50,7 @@ return {
 				"ast-grep",
 				-- php
 				"phpcs",
-				"php-cs-fixer",
+				"pretty-php",
 			},
 		})
 	end,

@@ -11,6 +11,7 @@ return {
 				c = { "clang-format" },
 				rust = { "ast-grep" },
 				python = { "black" },
+				php = { "pretty-php" },
 			},
 		})
 

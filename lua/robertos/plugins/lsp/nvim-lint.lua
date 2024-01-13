@@ -6,6 +6,7 @@ return {
 			python = { "flake8", "mypy" },
 			cpp = { "clangtidy" },
 			javascript = { "eslint" },
+			php = { "phpcs" },
 		}
 		vim.api.nvim_create_autocmd({ "BufWritePost" }, {
 			callback = function()
