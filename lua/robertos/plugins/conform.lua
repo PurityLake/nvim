@@ -8,10 +8,11 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				javascript = { "prettier" },
+				json = { "prettier" },
 				c = { "clang-format" },
 				rust = { "ast-grep" },
 				python = { "black" },
-				php = { "pretty-php" },
+				php = { "php-cs-fixer" },
 			},
 		})
 
