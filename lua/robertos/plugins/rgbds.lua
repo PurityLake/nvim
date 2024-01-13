@@ -1,0 +1,3 @@
+return {
+	"EmmaEwert/vim-rgbds",
+}
