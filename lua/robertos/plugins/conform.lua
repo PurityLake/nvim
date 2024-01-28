@@ -9,6 +9,7 @@ return {
         lua = { "stylua" },
         javascript = { "prettier" },
         json = { "prettier" },
+        typescript = { "prettier" },
         c = { "clang-format" },
         rust = { "ast-grep" },
         python = { "black" },
