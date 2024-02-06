@@ -80,7 +80,6 @@ return {
 
     lspconfig["gopls"].setup({
       capabilities = capabilities,
-      on_attach = on_attach,
       settings = {
         gopls = {
           analyses = {
@@ -93,31 +92,26 @@ return {
 
     lspconfig["pylsp"].setup({
       capabilities = capabilities,
-      on_attach = on_attach,
       settings = {},
     })
 
     lspconfig["eslint"].setup({
       capabilities = capabilities,
-      on_attach = on_attach,
       settings = {},
     })
 
     lspconfig["tsserver"].setup({
       capabilities = capabilities,
-      on_attach = on_attach,
       settings = {},
     })
 
     lspconfig["clojure_lsp"].setup({
       capabilities = capabilities,
-      on_attach = on_attach,
       settings = {},
     })
 
     lspconfig["clangd"].setup({
       capabilities = capabilities,
-      on_attach = on_attach,
       settings = {
         filetypes = { "c", "cpp", "objc", "objcpp" },
       },
@@ -125,7 +119,6 @@ return {
 
     lspconfig["phpactor"].setup({
       capabilities = capabilities,
-      on_attach = on_attach,
       settings = {
         filetypes = { "php" },
       },
